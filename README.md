@@ -53,7 +53,7 @@ myhttp/
 - CRUD 구현: `find()`, `findAll()`, `save()`, `update()`, `delete()`
 
 ### service/
-- `UserService`, `ItemService` : 비즈니스 로직 레포지토리 위임
+- `UserService`, `ItemService` 
 
 ### handler/
 - `RequestHandler.java` : `handle(HttpRequest)` 인터페이스
