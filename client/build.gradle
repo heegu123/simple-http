@@ -1,0 +1,33 @@
+// client/build.gradle
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'myhttp'
+version = '1.0-SNAPSHOT'
+
+sourceCompatibility = '17'
+targetCompatibility = '17'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation project(':common')
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.14.2'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.8.2'
+}
+
+application {
+    mainClass = 'myhttp.client.Application'
+}
+
+tasks.named('run', JavaExec) {
+    standardInput = System.in
+}
+
+tasks.test {
+    useJUnitPlatform()
+}
