@@ -2,7 +2,7 @@
 
 ## 개요
 - TCP 소켓 통신으로 직접 구현한 HTTP/1.1 서버·클라이언트
-- Java 17, Gradle, JPA(MySQL), Jackson 사용
+- Java 17, Gradle, JPA, MySQL
 - GET, HEAD, POST, PUT 메서드 파싱·구성, HTTP/1.1 지속 연결(persistent connection) 지원
 
 ## 모듈 구조
@@ -53,7 +53,7 @@ myhttp/
 - CRUD 구현: `find()`, `findAll()`, `save()`, `update()`, `delete()`
 
 ### service/
-- `UserService`, `ItemService` : 비즈니스 로직 레포지토리 위임
+- `UserService`, `ItemService` 
 
 ### handler/
 - `RequestHandler.java` : `handle(HttpRequest)` 인터페이스
