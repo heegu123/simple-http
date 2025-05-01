@@ -57,7 +57,7 @@ public class UserRepository {
             User updated = em.merge(user);
             tx.commit();
 
-            return user;
+            return updated;
         } finally {
             em.close();
         }
@@ -73,6 +73,7 @@ public class UserRepository {
             if (user != null) {
                 em.remove(user);
             }
+            tx.commit();
         } finally {
             em.close();
         }

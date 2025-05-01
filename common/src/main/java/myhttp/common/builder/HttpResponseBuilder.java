@@ -16,7 +16,6 @@ public class HttpResponseBuilder {
     private final HttpHeaders headers = new HttpHeaders();
     private byte[] body = new byte[0];
 
-    //TODO : CHECK
     private HttpHeaders requestHeaders;
     public HttpResponseBuilder withRequestHeaders(HttpHeaders reqHeaders) {
         this.requestHeaders = reqHeaders;

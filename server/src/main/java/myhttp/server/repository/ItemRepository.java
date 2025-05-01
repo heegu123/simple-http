@@ -57,7 +57,7 @@ public class ItemRepository {
             Item updated = em.merge(item);
             tx.commit();
 
-            return item;
+            return updated;
         } finally {
             em.close();
         }

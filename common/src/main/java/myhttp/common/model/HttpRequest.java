@@ -9,7 +9,7 @@ import java.util.Objects;
 /*
 * HTTP 요청 메시지 구조
 * */
-public class HttpRequest {
+public class HttpRequest implements HttpMessage{
 
     private final HttpMethod method;
     private final String path;

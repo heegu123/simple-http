@@ -49,7 +49,7 @@ public class UserController implements RequestHandler {
             }
             String body = JsonUtil.toJson(user);
             return new HttpResponseBuilder()
-                    .withStatus(HttpStatus.CREATED)
+                    .withStatus(HttpStatus.OK)
                     .withRequestHeaders(request.getHeaders())
                     .addHeader("Content-Type", "application/json")
                     .withBody(body)
