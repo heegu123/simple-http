@@ -7,6 +7,7 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import java.util.List;
 
+// 유저 엔티티를 DB에 조회하고 저장하는 리포지토리
 public class UserRepository {
 
     private final EntityManagerFactory emf;

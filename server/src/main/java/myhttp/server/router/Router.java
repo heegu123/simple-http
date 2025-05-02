@@ -13,6 +13,7 @@ import myhttp.server.service.UserService;
 
 import javax.persistence.EntityManagerFactory;
 
+// 요청을 처리할 컨트롤러를 결정하는 라우터
 public class Router {
 
     private final UserController userController;
@@ -27,12 +28,13 @@ public class Router {
 
     public RequestHandler route(HttpRequest request) {
         String path = request.getPath();
-        if (path.startsWith("/users")) {
-            return userController;
+        if (path.startsWith("/users")) { // /users로 시작하는 경로
+            return userController; // UserController를 반환
         }
-        if (path.startsWith("/items")) {
-            return itemController;
+        if (path.startsWith("/items")) { // /items로 시작하는 경로
+            return itemController; // ItemController를 반환
         }
+        // 그 외의 경로는 404 Not Found 처리
         return req -> new HttpResponseBuilder()
                 .withStatus(HttpStatus.NOT_FOUND)
                 .withBody("Not Found")

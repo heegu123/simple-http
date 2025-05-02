@@ -32,6 +32,7 @@ public class HttpRequestBuilder {
         headers.setHeader("Content-Length", String.valueOf(body.length));
         return this;
     }
+
     public HttpRequestBuilder withBody(byte[] b) {
         this.body = b;
         headers.setHeader("Content-Length", String.valueOf(b.length));

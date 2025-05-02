@@ -7,6 +7,8 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import java.util.List;
 
+
+// 아이템 엔티티를 DB에 저장하고 조회하는 리포지토리 클래스
 public class ItemRepository {
 
     private final EntityManagerFactory emf;

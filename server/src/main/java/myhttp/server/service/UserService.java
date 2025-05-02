@@ -5,7 +5,7 @@ import myhttp.server.repository.UserRepository;
 import java.util.List;
 
 public class UserService {
-    private final UserRepository repo;
+    private final UserRepository repo; // 유저 저장소
 
     public UserService(UserRepository repo) {
         this.repo = repo;

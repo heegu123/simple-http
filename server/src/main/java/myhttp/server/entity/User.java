@@ -2,6 +2,11 @@ package myhttp.server.entity;
 
 import javax.persistence.*;
 
+/*
+* User 엔티티는 사용자 정보를 나타내는 JPA 엔티티.
+* 데이터베이스의 "users" 테이블과 매핑.
+* */
+
 @Entity
 @Table(name = "users")
 public class User {

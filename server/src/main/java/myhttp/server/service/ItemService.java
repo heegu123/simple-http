@@ -6,7 +6,7 @@ import myhttp.server.repository.ItemRepository;
 import java.util.List;
 
 public class ItemService {
-    private final ItemRepository repo;
+    private final ItemRepository repo; // 데이터 엑세스를 위한 레포지토리
 
     public ItemService(ItemRepository repo) {
         this.repo = repo;
