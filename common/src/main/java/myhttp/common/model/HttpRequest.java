@@ -11,12 +11,13 @@ import java.util.Objects;
 * */
 public class HttpRequest implements HttpMessage{
 
-    private final HttpMethod method;
-    private final String path;
-    private final String version;
-    private final HttpHeaders headers;
-    private final byte[] body;
+    private final HttpMethod method; // HTTP 메서드
+    private final String path; // 요청 경로
+    private final String version; // HTTP 버전
+    private final HttpHeaders headers; // HTTP 헤더
+    private final byte[] body; // HTTP 바디
 
+    // HttpRequest 객체를 생성하는 생성자, null 체크
     public HttpRequest(HttpMethod method, String path, String version, HttpHeaders headers, byte[] body) {
         this.method = Objects.requireNonNull(method, "HttpMethod cannot be null");
         this.path = Objects.requireNonNull(path, "Path cannot be null");
