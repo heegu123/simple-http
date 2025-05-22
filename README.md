@@ -1,7 +1,7 @@
 # myhttp
 
 ## 개요
-- TCP 소켓 통신으로 직접 구현한 HTTP/1.1 서버·클라이언트
+- TCP 소켓 통신으로 구현한 HTTP/1.1 서버·클라이언트
 - Java 21, Gradle, JPA, MySQL
 - GET, HEAD, POST, PUT 메서드 파싱·구성, HTTP/1.1 지속 연결(persistent connection) 지원
 
